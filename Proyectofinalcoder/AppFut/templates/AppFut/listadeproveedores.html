@@ -22,7 +22,11 @@
 
     {% for provee in listadeprove %}
     <ul>
-        <li> Nombre: {{provee.nombre}}</li>
+        <li> <strong>Nombre: </strong>{{provee.nombre}}</li>
+        <li> <strong>Producto: </strong> {{provee.producto}}</li>   
+            
+
+        
         
             <a class="btn btn-primary2 btn-xlN2" href="{% url 'EliminarProveedor' provee.nombre %}">Eliminar proveedor</a>
         

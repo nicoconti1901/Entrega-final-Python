@@ -11,15 +11,15 @@
     <link rel="icon" type="image/x-icon" href="{% static 'AppFut/assets/icono1.png' %}" />
 </head>
 <body>
-    <p>Estas buscando el nombre del proveedor que venda {{busqueda}}</p>
+    <p>Estas buscando el nombre del proveedor que venda <strong>"{{busqueda}}"</strong></p>
 
     {% for prove in proveedores %}
 
         <ul>
-            <li>Proveedor: {{prove.nombre}}</li>
-            <li>Producto: {{prove.producto}}</li>
-            <li>Email: {{prove.email}}</li>
-            <li>Telefono: {{prove.telefono}}</li>
+            <li> <strong> Proveedor: </strong>  {{prove.nombre}}</li>
+            <li> <strong> Producto: </strong>  {{prove.producto}}</li>
+            <li> <strong> Email: </strong>  {{prove.email}}</li>
+            <li> <strong> Telefono: </strong> {{prove.telefono}}</li>
         </ul>
     {% endfor %}
 
