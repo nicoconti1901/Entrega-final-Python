@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'AppFut/css/styles.css' %}" rel="stylesheet" />
+    <title>Registro</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'AppFut/assets/icono1.png' %}" />
+
+<style>
+        body {
+          background-image: url("{% static 'AppFut/assets/img/blanco.jpg' %}");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+</style>
+</head>
+<body>
+    <h1>Registro</h1>
+    <form action="" method= "POST"> {% csrf_token %}
+        <table>
+            {{formu4.as_p}}
+        </table>
+        <input type="submit" class="btn btn-primary btn-xlN text-uppercase" value="Registrarse">
+    </form>
+</body>
+</html>
